@@ -93,3 +93,113 @@ Processing by QuestionsController#update as HTML
 Redirected to http://test.host/questions/980190962
 Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
   [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (145.5ms)[0m  [1mCREATE TABLE "questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "question" text, "opa" text, "opb" text, "opc" text, "opd" text, "ro" varchar(255), "year" date, "examcode" integer, "subjectcode" integer, "topiccode" integer, "stopiccode" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (101.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (100.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (100.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150111111407')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "questions"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "questions" ("question", "opa", "opb", "opc", "opd", "ro", "year", "examcode", "subjectcode", "topiccode", "stopiccode", "created_at", "updated_at", "id") VALUES ('MyText', 'MyText', 'MyText', 'MyText', 'MyText', 'MyString', '2015-01-11', 1, 1, 1, 1, '2015-01-11 18:38:25', '2015-01-11 18:38:25', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "questions" ("question", "opa", "opb", "opc", "opd", "ro", "year", "examcode", "subjectcode", "topiccode", "stopiccode", "created_at", "updated_at", "id") VALUES ('MyText', 'MyText', 'MyText', 'MyText', 'MyText', 'MyString', '2015-01-11', 1, 1, 1, 1, '2015-01-11 18:38:25', '2015-01-11 18:38:25', 298486374)[0m
+  [1m[35m (116.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+QuestionsControllerTest: test_should_create_question
+----------------------------------------------------
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "questions"[0m
+Processing by QuestionsController#create as HTML
+  Parameters: {"question"=>{"examcode"=>"1", "opa"=>"MyText", "opb"=>"MyText", "opc"=>"MyText", "opd"=>"MyText", "question"=>"MyText", "ro"=>"MyString", "stopiccode"=>"1", "subjectcode"=>"1", "topiccode"=>"1", "year"=>"2015-01-11"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "questions" ("created_at", "examcode", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 11 Jan 2015 18:38:26 UTC +00:00], ["examcode", 1], ["opa", "MyText"], ["opb", "MyText"], ["opc", "MyText"], ["opd", "MyText"], ["question", "MyText"], ["ro", "MyString"], ["stopiccode", 1], ["subjectcode", 1], ["topiccode", 1], ["updated_at", Sun, 11 Jan 2015 18:38:26 UTC +00:00], ["year", Sun, 11 Jan 2015]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/questions/980190963
+Completed 302 Found in 5ms (ActiveRecord: 0.9ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "questions"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+QuestionsControllerTest: test_should_destroy_question
+-----------------------------------------------------
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "questions"[0m
+Processing by QuestionsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "questions" WHERE "questions"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/questions
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "questions"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------
+QuestionsControllerTest: test_should_get_edit
+---------------------------------------------
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by QuestionsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", "980190962"]]
+  Rendered questions/_form.html.erb (11.3ms)
+Completed 200 OK in 160ms (Views: 159.6ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+QuestionsControllerTest: test_should_get_index
+----------------------------------------------
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------
+QuestionsControllerTest: test_should_get_new
+--------------------------------------------
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by QuestionsController#new as HTML
+  Rendered questions/_form.html.erb (5.4ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------
+QuestionsControllerTest: test_should_show_question
+--------------------------------------------------
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+QuestionsControllerTest: test_should_update_question
+----------------------------------------------------
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by QuestionsController#update as HTML
+  Parameters: {"question"=>{"examcode"=>"1", "opa"=>"MyText", "opb"=>"MyText", "opc"=>"MyText", "opd"=>"MyText", "question"=>"MyText", "ro"=>"MyString", "stopiccode"=>"1", "subjectcode"=>"1", "topiccode"=>"1", "year"=>"2015-01-11"}, "id"=>"980190962"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/questions/980190962
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+RandomControllerTest: test_should_get_oneques
+---------------------------------------------
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------
+RandomControllerTest: test_should_get_quespaper
+-----------------------------------------------
+Processing by RandomController#quespaper as HTML
+Completed 200 OK in 1ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m

@@ -1,8 +1,12 @@
 require 'securerandom'
 
 class RandomController < ApplicationController
+  def index
+    @questions = Question.all
+  end
+
   def oneques
-  	@questions =Question.all
+    index
   	random
   end
 
@@ -10,6 +14,6 @@ class RandomController < ApplicationController
   end
 
   def random
- @rand = @questions[SecureRandom.random_number(3)]
+    @rand = @questions[SecureRandom.random_number(3)]
   end
 end
