@@ -23,7 +23,7 @@
   <tbody>
     <% @questions.each do |question| %>
       <tr>
-        <td><%= question.question %></td>
+        <td><%= question.question.html_safe %></td>
         <td><%= question.opa %></td>
         <td><%= question.opb %></td>
         <td><%= question.opc %></td>
