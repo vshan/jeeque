@@ -3,6 +3,7 @@ require 'securerandom'
 class RandomController < ApplicationController
   def index
     @questions = Question.all
+    @questions
   end
 
   def oneques
