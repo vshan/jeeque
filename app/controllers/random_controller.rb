@@ -1,13 +1,17 @@
 require 'securerandom'
 
 class RandomController < ApplicationController
-  def index
+  def enable
     @questions = Question.all
     @questions
   end
 
+  def index
+    enable
+  end
+
   def oneques
-    index
+    enable
   	random
   end
 
@@ -15,6 +19,6 @@ class RandomController < ApplicationController
   end
 
   def random
-    @rand = @questions[SecureRandom.random_number(3)]
+    @rand = @questions[SecureRandom.random_number(15)]
   end
 end

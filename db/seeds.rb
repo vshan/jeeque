@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Question.delete_all
-Question.create!(  question: "q1"
+Question.create!(  question: "q1",
   opa:   "1",
   opb:   "1",
   opc:   "1",
@@ -19,7 +19,7 @@ Question.create!(  question: "q1"
   topiccode: 1,
   stopiccode: 1
 )
-Question.create!(  question: "q2"
+Question.create!(  question: "q2",
   opa:   "1",
   opb:   "1",
   opc:   "1",
@@ -31,7 +31,7 @@ Question.create!(  question: "q2"
   topiccode: 1,
   stopiccode: 2
 )
-Question.create!(  question: "q3"
+Question.create!(  question: "q3",
   opa:   "1",
   opb:   "1",
   opc:   "1",
@@ -43,7 +43,7 @@ Question.create!(  question: "q3"
   topiccode: 1,
   stopiccode: 3
 )
-Question.create!(  question: "q4"
+Question.create!(  question: "q4",
   opa:   "1",
   opb:   "1",
   opc:   "1",
@@ -55,7 +55,7 @@ Question.create!(  question: "q4"
   topiccode: 2,
   stopiccode: 1
 )
-Question.create!(  question: "q5"
+Question.create!(  question: "q5",
   opa:   "1",
   opb:   "1",
   opc:   "1",
@@ -67,7 +67,7 @@ Question.create!(  question: "q5"
   topiccode: 3,
   stopiccode: 1
 )
-Question.create!(  question: "q6"
+Question.create!(  question: "q6",
   opa:   "1",
   opb:   "1",
   opc:   "1",
@@ -79,7 +79,7 @@ Question.create!(  question: "q6"
   topiccode: 1,
   stopiccode: 1
 )
-Question.create!(  question: "q7"
+Question.create!(  question: "q7",
   opa:   "1",
   opb:   "1",
   opc:   "1",
@@ -91,7 +91,7 @@ Question.create!(  question: "q7"
   topiccode: 1,
   stopiccode: 2
 )
-Question.create!(  question: "q8"
+Question.create!(  question: "q8",
   opa:   "1",
   opb:   "1",
   opc:   "1",
@@ -103,7 +103,7 @@ Question.create!(  question: "q8"
   topiccode: 1,
   stopiccode: 3
 )
-Question.create!(  question: "q9"
+Question.create!(  question: "q9",
   opa:   "1",
   opb:   "1",
   opc:   "1",
@@ -115,7 +115,7 @@ Question.create!(  question: "q9"
   topiccode: 2,
   stopiccode: 1
 )
-Question.create!(  question: "q10"
+Question.create!(  question: "q10",
   opa:   "1",
   opb:   "1",
   opc:   "1",
@@ -127,7 +127,7 @@ Question.create!(  question: "q10"
   topiccode: 3,
   stopiccode: 1
 )
-Question.create!(  question: "q11"
+Question.create!(  question: "q11",
   opa:   "1",
   opb:   "1",
   opc:   "1",
@@ -139,7 +139,7 @@ Question.create!(  question: "q11"
   topiccode: 1,
   stopiccode: 1
 )
-Question.create!(  question: "q12"
+Question.create!(  question: "q12",
   opa:   "1",
   opb:   "1",
   opc:   "1",
@@ -151,7 +151,7 @@ Question.create!(  question: "q12"
   topiccode: 1,
   stopiccode: 2
 )
-Question.create!(  question: "q13"
+Question.create!(  question: "q13",
   opa:   "1",
   opb:   "1",
   opc:   "1",
@@ -163,7 +163,7 @@ Question.create!(  question: "q13"
   topiccode: 1,
   stopiccode: 3
 )
-Question.create!(  question: "q14"
+Question.create!(  question: "q14",
   opa:   "1",
   opb:   "1",
   opc:   "1",
@@ -175,7 +175,7 @@ Question.create!(  question: "q14"
   topiccode: 2,
   stopiccode: 1
 )
-Question.create!(  question: "q15"
+Question.create!(  question: "q15",
   opa:   "1",
   opb:   "1",
   opc:   "1",

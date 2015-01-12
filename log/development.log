@@ -13580,3 +13580,2485 @@ Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 01:07:05 +053
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 01:07:05 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (97.4ms)[0m  DELETE FROM "questions"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (56.2ms)[0m  INSERT INTO "questions" ("created_at", "examcode", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 12 Jan 2015 06:55:03 UTC +00:00], ["examcode", 1], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q1"], ["ro", "1"], ["stopiccode", 1], ["subjectcode", 1], ["topiccode", 1], ["updated_at", Mon, 12 Jan 2015 06:55:03 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[36m (97.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("created_at", "examcode", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 12 Jan 2015 06:55:03 UTC +00:00], ["examcode", 1], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q2"], ["ro", "1"], ["stopiccode", 2], ["subjectcode", 1], ["topiccode", 1], ["updated_at", Mon, 12 Jan 2015 06:55:03 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[35m (121.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("created_at", "examcode", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 12 Jan 2015 06:55:04 UTC +00:00], ["examcode", 1], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q3"], ["ro", "1"], ["stopiccode", 3], ["subjectcode", 1], ["topiccode", 1], ["updated_at", Mon, 12 Jan 2015 06:55:04 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[36m (132.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("created_at", "examcode", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 12 Jan 2015 06:55:04 UTC +00:00], ["examcode", 1], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q4"], ["ro", "1"], ["stopiccode", 1], ["subjectcode", 1], ["topiccode", 2], ["updated_at", Mon, 12 Jan 2015 06:55:04 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[35m (144.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("created_at", "examcode", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 12 Jan 2015 06:55:04 UTC +00:00], ["examcode", 1], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q5"], ["ro", "1"], ["stopiccode", 1], ["subjectcode", 1], ["topiccode", 3], ["updated_at", Mon, 12 Jan 2015 06:55:04 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[36m (154.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("created_at", "examcode", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 12 Jan 2015 06:55:04 UTC +00:00], ["examcode", 1], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q6"], ["ro", "1"], ["stopiccode", 1], ["subjectcode", 2], ["topiccode", 1], ["updated_at", Mon, 12 Jan 2015 06:55:04 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[35m (154.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("created_at", "examcode", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 12 Jan 2015 06:55:04 UTC +00:00], ["examcode", 1], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q7"], ["ro", "1"], ["stopiccode", 2], ["subjectcode", 2], ["topiccode", 1], ["updated_at", Mon, 12 Jan 2015 06:55:04 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[36m (121.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("created_at", "examcode", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 12 Jan 2015 06:55:04 UTC +00:00], ["examcode", 1], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q8"], ["ro", "1"], ["stopiccode", 3], ["subjectcode", 2], ["topiccode", 1], ["updated_at", Mon, 12 Jan 2015 06:55:04 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[35m (99.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("created_at", "examcode", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 12 Jan 2015 06:55:04 UTC +00:00], ["examcode", 1], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q9"], ["ro", "1"], ["stopiccode", 1], ["subjectcode", 2], ["topiccode", 2], ["updated_at", Mon, 12 Jan 2015 06:55:04 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[36m (99.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("created_at", "examcode", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 12 Jan 2015 06:55:04 UTC +00:00], ["examcode", 1], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q10"], ["ro", "1"], ["stopiccode", 1], ["subjectcode", 2], ["topiccode", 3], ["updated_at", Mon, 12 Jan 2015 06:55:04 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[35m (99.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("created_at", "examcode", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 12 Jan 2015 06:55:05 UTC +00:00], ["examcode", 1], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q11"], ["ro", "1"], ["stopiccode", 1], ["subjectcode", 3], ["topiccode", 1], ["updated_at", Mon, 12 Jan 2015 06:55:05 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[36m (112.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("created_at", "examcode", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 12 Jan 2015 06:55:05 UTC +00:00], ["examcode", 1], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q12"], ["ro", "1"], ["stopiccode", 2], ["subjectcode", 3], ["topiccode", 1], ["updated_at", Mon, 12 Jan 2015 06:55:05 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[35m (99.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("created_at", "examcode", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 12 Jan 2015 06:55:05 UTC +00:00], ["examcode", 1], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q13"], ["ro", "1"], ["stopiccode", 3], ["subjectcode", 3], ["topiccode", 1], ["updated_at", Mon, 12 Jan 2015 06:55:05 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[36m (99.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("created_at", "examcode", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 12 Jan 2015 06:55:05 UTC +00:00], ["examcode", 1], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q14"], ["ro", "1"], ["stopiccode", 1], ["subjectcode", 3], ["topiccode", 2], ["updated_at", Mon, 12 Jan 2015 06:55:05 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[35m (121.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("created_at", "examcode", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 12 Jan 2015 06:55:05 UTC +00:00], ["examcode", 1], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q15"], ["ro", "1"], ["stopiccode", 1], ["subjectcode", 3], ["topiccode", 3], ["updated_at", Mon, 12 Jan 2015 06:55:05 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[36m (132.6ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-12 12:25:18 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 224ms (Views: 178.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:25:19 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:25:19 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:25:19 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:25:19 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:25:19 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:25:19 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:25:19 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:25:19 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:25:19 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:25:19 +0530
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:25:21 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:25:22 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:25:22 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:25:23 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.5ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:25:23 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:25:23 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.5ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:25:24 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:25:24 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:25:24 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:25:24 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:25:24 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:25:24 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.6ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:25:24 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:25:25 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:25:25 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:25:25 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.6ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:25:25 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:25:25 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.6ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:25:25 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:25:26 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.6ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:25:26 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:25:26 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:25:26 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:25:26 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.6ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 3.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:25:26 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:25:27 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:25:27 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:25:27 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-01-12 12:25:31 +0530
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:25:31 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:25:31 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:25:31 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:25:31 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:25:31 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:25:31 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:25:31 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:25:31 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:25:31 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:25:31 +0530
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-01-12 12:27:28 +0530
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.erb within layouts/application (50.9ms)
+Completed 200 OK in 56ms (Views: 53.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:28 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:28 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:28 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:28 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:28 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:28 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:28 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:28 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:28 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:28 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:33 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:33 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:33 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:33 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:33 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:33 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:33 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:33 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:33 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:33 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:33 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.5ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:36 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.6ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:37 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.6ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.6ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:38 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:39 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:40 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.6ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:41 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:42 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.5ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:27:43 +0530
+
+
+Started GET "/random" for 127.0.0.1 at 2015-01-12 12:27:54 +0530
+Processing by RandomController#index as HTML
+Completed 500 Internal Server Error in 7ms
+
+ActionView::MissingTemplate (Missing template random/index, application/index with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/vinay/Desktop/jeeque/app/views"
+):
+  actionpack (4.0.0) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.0) lib/action_view/lookup_context.rb:115:in `find'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/vinay/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:403:in `_run__4276291571411899249__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__3729197993085285952__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/vinay/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/vinay/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/vinay/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/vinay/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/random" for 127.0.0.1 at 2015-01-12 12:32:36 +0530
+Processing by RandomController#index as HTML
+  Rendered random/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:32:36 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:32:36 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:32:36 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:32:36 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:32:36 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:32:36 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:32:36 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:32:36 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:32:36 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:32:36 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:32:38 +0530
+Processing by RandomController#oneques as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/random_controller.rb:21:in `random'
+  app/controllers/random_controller.rb:14:in `oneques'
+
+
+  Rendered /home/vinay/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/vinay/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/vinay/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/vinay/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.3ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:32:38 +0530
+Processing by RandomController#oneques as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/random_controller.rb:21:in `random'
+  app/controllers/random_controller.rb:14:in `oneques'
+
+
+  Rendered /home/vinay/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/vinay/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/vinay/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/vinay/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.3ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:33:18 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 28ms (Views: 3.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:33:19 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:33:19 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:33:19 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:33:19 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:33:19 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:33:19 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:33:19 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:33:19 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:33:19 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:33:19 +0530
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:33:20 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:33:21 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 4.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:33:21 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:33:22 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:33:22 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:33:22 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:33:22 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:33:22 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:33:23 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:33:23 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:33:23 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:33:23 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:33:23 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:33:23 +0530
+Processing by RandomController#oneques as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered random/oneques.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/random/quespaper" for 127.0.0.1 at 2015-01-12 12:33:24 +0530
+Processing by RandomController#quespaper as HTML
+  Rendered random/quespaper.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random" for 127.0.0.1 at 2015-01-12 12:33:27 +0530
+Processing by RandomController#index as HTML
+  Rendered random/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:33:27 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:33:27 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:33:27 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:33:27 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:33:27 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:33:27 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:33:27 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:33:27 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:33:27 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:33:27 +0530
+
+
+Started GET "/random/oneques" for 127.0.0.1 at 2015-01-12 12:33:30 +0530
+Processing by RandomController#oneques as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered random/oneques.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/random" for 127.0.0.1 at 2015-01-12 12:33:34 +0530
+Processing by RandomController#index as HTML
+  Rendered random/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-12 12:33:35 +0530
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-01-12 12:33:35 +0530
+
+
+Started GET "/assets/random.css?body=1" for 127.0.0.1 at 2015-01-12 12:33:35 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-12 12:33:35 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-12 12:33:35 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-12 12:33:35 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-12 12:33:35 +0530
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-01-12 12:33:35 +0530
+
+
+Started GET "/assets/random.js?body=1" for 127.0.0.1 at 2015-01-12 12:33:35 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-12 12:33:35 +0530
