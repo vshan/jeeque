@@ -1,12 +1,32 @@
 <div id="SingleQuestion">
-<p><%= link_to 'Single Question', random_oneques_path %></p>
-<%= form_for(:question) do |form| %> 
+<h1>Single Question</h1>
+<%= form_for :question do |form| %> 
 <p>
 	<%= form.label :subject %>
 	<%= form.select :subject, {Physics: "1", Chemistry: "2", Maths: "3"} %>
 </p>
+<p>
+	<%= form.label :physics_topic %>
+	<%= form.select :physics_topic, {Dynamics: "1", Mechanics: "2", Electrostatics: "3"} %>
+</p>
+<p>
+	<%= form.label :chemistry_subject %>
+	<%= form.select :chemistry_subject, {Organic: "1", Inorganic: "2", Physics: "3"} %>
+</p>
+<p>
+	<%= form.label :maths_subject %>
+	<%= form.select :maths_subject, {Topology: "1", Coordinate: "2", Calculus: "3"} %>
+</p>
 <% end %>
+<p><%= link_to 'Generate Single Question', random_oneques_path %></p>
 </div>
 <div id="QuestionPaper">
-<p><%= link_to 'Question Paper', random_oneques_path %></p>
+<h1>Question Paper</h1>
+<%= form_for :question do |form| %> 
+<p>
+	<%= form.label :year %>
+	<%= form.select :year,  (1960..2015) %>
+</p>
+<% end %>
+<p><%= link_to 'Generate Question Paper', random_quespaper_path %></p>
 </div>

@@ -1,6 +1,7 @@
 Jeeque::Application.routes.draw do
   get "random/oneques"
   get "random/quespaper"
+  get "random/chingy"
   resources :questions
   resources :random
   root 'random#index'

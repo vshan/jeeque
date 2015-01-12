@@ -3,6 +3,7 @@ require 'securerandom'
 class RandomController < ApplicationController
   def enable
     @questions = Question.all
+    @questions2 = @questions[1]
     @questions
   end
 
