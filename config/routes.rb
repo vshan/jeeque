@@ -1,4 +1,8 @@
 Jeeque::Application.routes.draw do
+  resources :subtopiccodes
+
+  resources :topiccodes
+
   resources :scodes
 
   get "random/oneques"

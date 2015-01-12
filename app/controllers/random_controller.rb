@@ -16,7 +16,7 @@ class RandomController < ApplicationController
   end
 
   def generate_question(subject)
-    subq = []
+  #  subq = enable.find(scode: subject)
     enable.each do |question|
       if question.subjectcode == subject
         subq << question

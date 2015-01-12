@@ -38484,3 +38484,32 @@ Migrating to CreateScodes (20150112154428)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("created_at", "examcode", "id", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 12 Jan 2015 16:07:23 UTC +00:00], ["examcode", 1], ["id", 15], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q15"], ["ro", "1"], ["stopiccode", 1], ["subjectcode", 3], ["topiccode", 3], ["updated_at", Mon, 12 Jan 2015 16:07:23 UTC +00:00], ["year", Fri, 12 Dec 2014]]
   [1m[36m (110.7ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTopiccodes (20150112173658)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "topiccodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tcode" integer, "tname" varchar(255), "active" varchar(1), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150112173658"]]
+  [1m[36m (155.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateTopiccodes (20150112173658)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "topiccodes"
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20150112173658'[0m
+  [1m[35m (125.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTopiccodes (20150112173941)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "topiccodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tcode" integer, "tname" varchar(255), "scode" integer, "active" varchar(1), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150112173941"]]
+  [1m[36m (124.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSubtopiccodes (20150112174031)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "subtopiccodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stcode" integer, "stname" varchar(255), "tcode" integer, "active" varchar(1), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150112174031"]]
+  [1m[36m (150.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
