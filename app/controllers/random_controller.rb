@@ -9,12 +9,10 @@ class RandomController < ApplicationController
   def index
     enable
   end
-
-  def oneques(params)
-    enable
-   # scode = params[:subject]
-  	random
-  end
+#  def delemelater
+#    Parameters: {"utf8"=>"✓", "authenticity_token"=>"ck3MO8XXUTJ498SqkomkQZQ9gtjxGwDAjwgtv2/+irU=", "question"=>{"subject"=>"2", "physics_topic"=>"2", "chemistry_subject"=>"2", "maths_subject"=>"2"}, "commit"=>"Generate Single Question"}
+#{"utf8"=>"✓", "authenticity_token"=>"ck3MO8XXUTJ498SqkomkQZQ9gtjxGwDAjwgtv2/+irU=", "question"=>{"subject"=>"2", "physics_topic"=>"2", "chemistry_subject"=>"2", "maths_subject"=>"2"}, "commit"=>"Generate Single Question", "action"=>"create", "controller"=>"random"}
+#  end
 
   def generate_question(subject)
   #  subq = enable.find(scode: subject)
@@ -45,29 +43,40 @@ class RandomController < ApplicationController
     rques
   end
 
-  def quespaper(params)
+  def quespaper
     @phyq = generate_question(1)
     @chemq = generate_question(2)
     @matq = generate_question(3)
   end
   
   def create 
-    #@question = Question.new(question_params)
     respond_to do |format|
       if params[:commit] == "Generate Question Paper"
         format.html do
-          quespaper(params)
+          quespaper
           render action: 'quespaper'
         end
-      end
-      format.html do
-        oneques(params)
-        render action: 'oneques'
+      elsif params[:commit] == "Generate Single Question"
+        format.html do
+          oneques(params)
+          render action: 'oneques'
+        end
       end
     end
   end
 
-  def random
-    @rand = @questions[SecureRandom.random_number(15)]
+  def oneques(params)
+    scode = params[:question][:subject]
+    @rand = random(scode)
+  end
+
+  def random(scode)
+    subq = []
+    enable.each do |question|
+      if question.subjectcode == scode.to_i
+        subq << question
+      end 
+    end
+    subq[SecureRandom.random_number(subq.size)]
   end
 end
