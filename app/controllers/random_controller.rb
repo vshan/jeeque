@@ -12,11 +12,12 @@ class RandomController < ApplicationController
 
   def oneques
     enable
-  	random
+  	@rand = @questions[SecureRandom.random_number(15)]
   end
 
   def generate_question(subject)
   #  subq = enable.find(scode: subject)
+    subq = []
     enable.each do |question|
       if question.subjectcode == subject
         subq << question
@@ -47,6 +48,16 @@ class RandomController < ApplicationController
     @phyq = generate_question(1)
     @chemq = generate_question(2)
     @matq = generate_question(3)
+  end
+  
+  def create 
+    #@question = Question.new(question_params)
+    respond_to do |format|
+      if params[:commit] == "Generate Question Paper"
+        format.html { render action: 'quespaper'}
+      end
+      format.html { render action: 'oneques' }
+    end
   end
 
   def random

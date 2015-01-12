@@ -17,6 +17,9 @@
 	<%= form.label :maths_subject %>
 	<%= form.select :maths_subject, {Topology: 1, Coordinate: 2, Calculus: 3} %>
 </p>
+ <p class="actions">
+    <%= form.submit 'Generate Single Question'%>
+ </p>
 <% end %>
 <p><%= link_to 'Generate Single Question', random_oneques_path %></p>
 </div>
@@ -26,6 +29,9 @@
 <p>
 	<%= form.label :year %>
 	<%= form.select :year,  (1960..2015) %>
+</p>
+<p class="actions">
+    <%= form.submit 'Generate Question Paper'%>
 </p>
 <% end %>
 <p><%= link_to 'Generate Question Paper', random_quespaper_path %></p>
