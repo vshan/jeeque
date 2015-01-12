@@ -38428,3 +38428,59 @@ Processing by RandomController#index as HTML
 Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.0ms)
   [1m[36mQuestion Load (2.5ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
   [1m[36mQuestion Load (2.4ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateScodes (20150112154428)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateScodes (20150112154428)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "scodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "scode" integer, "sname" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150112154428"]]
+  [1m[36m (127.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (111.3ms)[0m  DELETE FROM "questions"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "questions" ("created_at", "examcode", "id", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 12 Jan 2015 16:07:22 UTC +00:00], ["examcode", 1], ["id", 1], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q1"], ["ro", "1"], ["stopiccode", 1], ["subjectcode", 1], ["topiccode", 1], ["updated_at", Mon, 12 Jan 2015 16:07:22 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[36m (94.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("created_at", "examcode", "id", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 12 Jan 2015 16:07:22 UTC +00:00], ["examcode", 1], ["id", 2], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q2"], ["ro", "1"], ["stopiccode", 2], ["subjectcode", 1], ["topiccode", 1], ["updated_at", Mon, 12 Jan 2015 16:07:22 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[35m (108.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("created_at", "examcode", "id", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 12 Jan 2015 16:07:22 UTC +00:00], ["examcode", 1], ["id", 3], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q3"], ["ro", "1"], ["stopiccode", 3], ["subjectcode", 1], ["topiccode", 1], ["updated_at", Mon, 12 Jan 2015 16:07:22 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[36m (98.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("created_at", "examcode", "id", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 12 Jan 2015 16:07:22 UTC +00:00], ["examcode", 1], ["id", 4], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q4"], ["ro", "1"], ["stopiccode", 1], ["subjectcode", 1], ["topiccode", 2], ["updated_at", Mon, 12 Jan 2015 16:07:22 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[35m (98.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "questions" ("created_at", "examcode", "id", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 12 Jan 2015 16:07:22 UTC +00:00], ["examcode", 1], ["id", 5], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q5"], ["ro", "1"], ["stopiccode", 1], ["subjectcode", 1], ["topiccode", 3], ["updated_at", Mon, 12 Jan 2015 16:07:22 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[36m (98.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("created_at", "examcode", "id", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 12 Jan 2015 16:07:22 UTC +00:00], ["examcode", 1], ["id", 6], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q6"], ["ro", "1"], ["stopiccode", 1], ["subjectcode", 2], ["topiccode", 1], ["updated_at", Mon, 12 Jan 2015 16:07:22 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[35m (99.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("created_at", "examcode", "id", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 12 Jan 2015 16:07:22 UTC +00:00], ["examcode", 1], ["id", 7], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q7"], ["ro", "1"], ["stopiccode", 2], ["subjectcode", 2], ["topiccode", 1], ["updated_at", Mon, 12 Jan 2015 16:07:22 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[36m (110.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("created_at", "examcode", "id", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 12 Jan 2015 16:07:22 UTC +00:00], ["examcode", 1], ["id", 8], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q8"], ["ro", "1"], ["stopiccode", 3], ["subjectcode", 2], ["topiccode", 1], ["updated_at", Mon, 12 Jan 2015 16:07:22 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[35m (110.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("created_at", "examcode", "id", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 12 Jan 2015 16:07:22 UTC +00:00], ["examcode", 1], ["id", 9], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q9"], ["ro", "1"], ["stopiccode", 1], ["subjectcode", 2], ["topiccode", 2], ["updated_at", Mon, 12 Jan 2015 16:07:22 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[36m (99.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "questions" ("created_at", "examcode", "id", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 12 Jan 2015 16:07:22 UTC +00:00], ["examcode", 1], ["id", 10], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q10"], ["ro", "1"], ["stopiccode", 1], ["subjectcode", 2], ["topiccode", 3], ["updated_at", Mon, 12 Jan 2015 16:07:22 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[35m (97.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("created_at", "examcode", "id", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 12 Jan 2015 16:07:23 UTC +00:00], ["examcode", 1], ["id", 11], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q11"], ["ro", "1"], ["stopiccode", 1], ["subjectcode", 3], ["topiccode", 1], ["updated_at", Mon, 12 Jan 2015 16:07:23 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[36m (121.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("created_at", "examcode", "id", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 12 Jan 2015 16:07:23 UTC +00:00], ["examcode", 1], ["id", 12], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q12"], ["ro", "1"], ["stopiccode", 2], ["subjectcode", 3], ["topiccode", 1], ["updated_at", Mon, 12 Jan 2015 16:07:23 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[35m (101.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("created_at", "examcode", "id", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 12 Jan 2015 16:07:23 UTC +00:00], ["examcode", 1], ["id", 13], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q13"], ["ro", "1"], ["stopiccode", 3], ["subjectcode", 3], ["topiccode", 1], ["updated_at", Mon, 12 Jan 2015 16:07:23 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[36m (99.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("created_at", "examcode", "id", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 12 Jan 2015 16:07:23 UTC +00:00], ["examcode", 1], ["id", 14], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q14"], ["ro", "1"], ["stopiccode", 1], ["subjectcode", 3], ["topiccode", 2], ["updated_at", Mon, 12 Jan 2015 16:07:23 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[35m (99.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("created_at", "examcode", "id", "opa", "opb", "opc", "opd", "question", "ro", "stopiccode", "subjectcode", "topiccode", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 12 Jan 2015 16:07:23 UTC +00:00], ["examcode", 1], ["id", 15], ["opa", "1"], ["opb", "1"], ["opc", "1"], ["opd", "1"], ["question", "q15"], ["ro", "1"], ["stopiccode", 1], ["subjectcode", 3], ["topiccode", 3], ["updated_at", Mon, 12 Jan 2015 16:07:23 UTC +00:00], ["year", Fri, 12 Dec 2014]]
+  [1m[36m (110.7ms)[0m  [1mcommit transaction[0m
