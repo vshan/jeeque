@@ -7,14 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Question.delete_all
-Question.create!(  question: 
-    %{<p>
-        CoffeeScript is JavaScript done right. It provides all of JavaScript's
-	functionality wrapped in a cleaner, more succinct syntax. In the first
-	book on this exciting new language, CoffeeScript guru Trevor Burnham
-	shows you how to hold onto all the power and flexibility of JavaScript
-	while writing clearer, cleaner, and safer code.
-      </p>},
+Question.create!(  question: "q1"
   opa:   "1",
   opb:   "1",
   opc:   "1",
@@ -26,15 +19,7 @@ Question.create!(  question:
   topiccode: 1,
   stopiccode: 1
 )
-# . . .
-Question.create!(  question: 
-    %{<p>
-        CoffeeScript is JavaScript done right. It provides all of JavaScript's
-	functionality wrapped in a cleaner, more succinct syntax. In the first
-	book on this exciting new language, CoffeeScript guru Trevor Burnham
-	shows you how to hold onto all the power and flexibility of JavaScript
-	while writing clearer, cleaner, and safer code.
-      </p>},
+Question.create!(  question: "q2"
   opa:   "1",
   opb:   "1",
   opc:   "1",
@@ -43,17 +28,58 @@ Question.create!(  question:
   year: DateTime.parse("2014-12-12"),
   examcode: 1,
   subjectcode: 1,
+  topiccode: 1,
+  stopiccode: 2
+)
+Question.create!(  question: "q3"
+  opa:   "1",
+  opb:   "1",
+  opc:   "1",
+  opd:   "1",
+  ro:   "1",
+  year: DateTime.parse("2014-12-12"),
+  examcode: 1,
+  subjectcode: 1,
+  topiccode: 1,
+  stopiccode: 3
+)
+Question.create!(  question: "q4"
+  opa:   "1",
+  opb:   "1",
+  opc:   "1",
+  opd:   "1",
+  ro:   "1",
+  year: DateTime.parse("2014-12-12"),
+  examcode: 1,
+  subjectcode: 1,
+  topiccode: 2,
+  stopiccode: 1
+)
+Question.create!(  question: "q5"
+  opa:   "1",
+  opb:   "1",
+  opc:   "1",
+  opd:   "1",
+  ro:   "1",
+  year: DateTime.parse("2014-12-12"),
+  examcode: 1,
+  subjectcode: 1,
+  topiccode: 3,
+  stopiccode: 1
+)
+Question.create!(  question: "q6"
+  opa:   "1",
+  opb:   "1",
+  opc:   "1",
+  opd:   "1",
+  ro:   "1",
+  year: DateTime.parse("2014-12-12"),
+  examcode: 1,
+  subjectcode: 2,
   topiccode: 1,
   stopiccode: 1
 )
-Question.create!(  question: 
-    %{<p>
-        CoffeeScript is JavaScript done right. It provides all of JavaScript's
-	functionality wrapped in a cleaner, more succinct syntax. In the first
-	book on this exciting new language, CoffeeScript guru Trevor Burnham
-	shows you how to hold onto all the power and flexibility of JavaScript
-	while writing clearer, cleaner, and safer code.
-      </p>},
+Question.create!(  question: "q7"
   opa:   "1",
   opb:   "1",
   opc:   "1",
@@ -61,7 +87,103 @@ Question.create!(  question:
   ro:   "1",
   year: DateTime.parse("2014-12-12"),
   examcode: 1,
-  subjectcode: 1,
+  subjectcode: 2,
   topiccode: 1,
+  stopiccode: 2
+)
+Question.create!(  question: "q8"
+  opa:   "1",
+  opb:   "1",
+  opc:   "1",
+  opd:   "1",
+  ro:   "1",
+  year: DateTime.parse("2014-12-12"),
+  examcode: 1,
+  subjectcode: 2,
+  topiccode: 1,
+  stopiccode: 3
+)
+Question.create!(  question: "q9"
+  opa:   "1",
+  opb:   "1",
+  opc:   "1",
+  opd:   "1",
+  ro:   "1",
+  year: DateTime.parse("2014-12-12"),
+  examcode: 1,
+  subjectcode: 2,
+  topiccode: 2,
+  stopiccode: 1
+)
+Question.create!(  question: "q10"
+  opa:   "1",
+  opb:   "1",
+  opc:   "1",
+  opd:   "1",
+  ro:   "1",
+  year: DateTime.parse("2014-12-12"),
+  examcode: 1,
+  subjectcode: 2,
+  topiccode: 3,
+  stopiccode: 1
+)
+Question.create!(  question: "q11"
+  opa:   "1",
+  opb:   "1",
+  opc:   "1",
+  opd:   "1",
+  ro:   "1",
+  year: DateTime.parse("2014-12-12"),
+  examcode: 1,
+  subjectcode: 3,
+  topiccode: 1,
+  stopiccode: 1
+)
+Question.create!(  question: "q12"
+  opa:   "1",
+  opb:   "1",
+  opc:   "1",
+  opd:   "1",
+  ro:   "1",
+  year: DateTime.parse("2014-12-12"),
+  examcode: 1,
+  subjectcode: 3,
+  topiccode: 1,
+  stopiccode: 2
+)
+Question.create!(  question: "q13"
+  opa:   "1",
+  opb:   "1",
+  opc:   "1",
+  opd:   "1",
+  ro:   "1",
+  year: DateTime.parse("2014-12-12"),
+  examcode: 1,
+  subjectcode: 3,
+  topiccode: 1,
+  stopiccode: 3
+)
+Question.create!(  question: "q14"
+  opa:   "1",
+  opb:   "1",
+  opc:   "1",
+  opd:   "1",
+  ro:   "1",
+  year: DateTime.parse("2014-12-12"),
+  examcode: 1,
+  subjectcode: 3,
+  topiccode: 2,
+  stopiccode: 1
+)
+Question.create!(  question: "q15"
+  opa:   "1",
+  opb:   "1",
+  opc:   "1",
+  opd:   "1",
+  ro:   "1",
+  year: DateTime.parse("2014-12-12"),
+  examcode: 1,
+  subjectcode: 3,
+  topiccode: 3,
   stopiccode: 1
 )
