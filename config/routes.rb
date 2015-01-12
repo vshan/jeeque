@@ -3,7 +3,7 @@ Jeeque::Application.routes.draw do
   get "random/quespaper"
   resources :questions
   resources :random
-  root 'random#oneques'
+  root 'random#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
