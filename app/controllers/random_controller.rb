@@ -21,8 +21,6 @@ class RandomController < ApplicationController
         subq << question
       end 
     end
-    subq.each {|q| puts q.id }
-    a = []
     a = [SecureRandom.random_number(5)]
     while(a.size != 3) do
       b = SecureRandom.random_number(5)
