@@ -10,8 +10,9 @@ class RandomController < ApplicationController
     enable
   end
 
-  def oneques
+  def oneques(params)
     enable
+   # scode = params[:subject]
   	random
   end
 
@@ -44,7 +45,7 @@ class RandomController < ApplicationController
     rques
   end
 
-  def quespaper
+  def quespaper(params)
     @phyq = generate_question(1)
     @chemq = generate_question(2)
     @matq = generate_question(3)
@@ -55,12 +56,12 @@ class RandomController < ApplicationController
     respond_to do |format|
       if params[:commit] == "Generate Question Paper"
         format.html do
-          quespaper 
+          quespaper(params)
           render action: 'quespaper'
         end
       end
       format.html do
-        oneques 
+        oneques(params)
         render action: 'oneques'
       end
     end
