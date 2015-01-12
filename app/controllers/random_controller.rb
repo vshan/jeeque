@@ -2,6 +2,7 @@ require 'securerandom'
 
 class RandomController < ApplicationController
   def enable
+    @no_of_questions = 3
     @questions = Question.all
   end
 
@@ -21,9 +22,9 @@ class RandomController < ApplicationController
         subq << question
       end 
     end
-    a = [SecureRandom.random_number(5)]
-    while(a.size != 3) do
-      b = SecureRandom.random_number(5)
+    a = [SecureRandom.random_number(subq.size)]
+    while(a.size != @no_of_questions) do
+      b = SecureRandom.random_number(subq.size)
       a.each do |e|
         if e == b
           a.delete(e)
@@ -33,8 +34,8 @@ class RandomController < ApplicationController
     end
     rques = []
     a.each do |n|
-      subq.each do |question|
-        if n+(5*subject) == question.id 
+      subq.each_with_index do |question, index|
+        if n == index
           rques << question
         end
       end
