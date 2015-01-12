@@ -1,5 +1,11 @@
 <div id="SingleQuestion">
 <p><%= link_to 'Single Question', random_oneques_path %></p>
+<%= form_for(:question) do |form| %> 
+<p>
+	<%= form.label :subject %>
+	<%= form.select :subject, {Physics: "1", Chemistry: "2", Maths: "3"} %>
+</p>
+<% end %>
 </div>
 <div id="QuestionPaper">
 <p><%= link_to 'Question Paper', random_oneques_path %></p>
