@@ -12,7 +12,7 @@ class RandomController < ApplicationController
 
   def oneques
     enable
-  	@rand = @questions[SecureRandom.random_number(15)]
+  	random
   end
 
   def generate_question(subject)
@@ -54,9 +54,15 @@ class RandomController < ApplicationController
     #@question = Question.new(question_params)
     respond_to do |format|
       if params[:commit] == "Generate Question Paper"
-        format.html { render action: 'quespaper'}
+        format.html do
+          quespaper 
+          render action: 'quespaper'
+        end
       end
-      format.html { render action: 'oneques' }
+      format.html do
+        oneques 
+        render action: 'oneques'
+      end
     end
   end
 
