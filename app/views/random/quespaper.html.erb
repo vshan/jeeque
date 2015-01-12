@@ -1,4 +1,16 @@
 <h1>Question Paper</h1>
+<h2>Physics</h2>
+<% @phyq.each do |question| %> 
+<p><%= question.question %></p>
+<% end %>
+<h2>Chemistry</h2>
+<% @chemq.each do |question| %> 
+<p><%= question.question %></p>
+<% end %>
+<h2>Maths</h2>
+<% @matq.each do |question| %> 
+<p><%= question.question %></p>
+<% end %>
 <p> Generate another random 
   <%= link_to "question paper", random_quespaper_path %>
 </p>
