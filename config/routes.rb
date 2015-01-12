@@ -1,4 +1,6 @@
 Jeeque::Application.routes.draw do
+  resources :scodes
+
   get "random/oneques"
   get "random/quespaper"
   get "random/chingy"
