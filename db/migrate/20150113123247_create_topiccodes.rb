@@ -3,7 +3,7 @@ class CreateTopiccodes < ActiveRecord::Migration
     create_table :topiccodes do |t|
       t.integer :tcode
       t.string :tname
-      t.integer :scode
+      t.integer :subcode
       t.string :active, limit: 1
 
       t.timestamps
