@@ -202,3 +202,4 @@ Question.create!(  id: 15,
   topiccode: 3,
   stopiccode: 1
 )
+Scode.create()
