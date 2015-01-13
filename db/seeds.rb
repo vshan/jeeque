@@ -202,4 +202,77 @@ Question.create!(  id: 15,
   topiccode: 3,
   stopiccode: 1
 )
-Scode.create()
+Scode.create( scode: 1,
+  sname: "Physics"
+)
+Scode.create( scode: 2,
+  sname: "Chemistry"
+)
+Scode.create( scode: 3,
+  sname: "Maths"
+)
+Topiccode.create ( tcode: 1,
+  tname: "Dynamics",
+  scode: 1,
+  active: 'Y'
+)
+Topiccode.create ( tcode: 2,
+  tname: "Mechanics",
+  scode: 1,
+  active: 'Y'
+)
+Topiccode.create ( tcode: 3,
+  tname: "Electrostatics",
+  scode: 1,
+  active: 'Y'
+)
+Topiccode.create ( tcode: 4,
+  tname: "Organic",
+  scode: 2,
+  active: 'Y'
+)
+Topiccode.create ( tcode: 5,
+  tname: "Inorganic",
+  scode: 2,
+  active: 'Y'
+)
+Topiccode.create ( tcode: 6,
+  tname: "Phyical",
+  scode: 2,
+  active: 'Y'
+)
+Topiccode.create ( tcode: 7,
+  tname: "Topology",
+  scode: 3,
+  active: 'Y'
+)
+Topiccode.create ( tcode: 8,
+  tname: "Coordinate",
+  scode: 3,
+  active: 'Y'
+)
+Topiccode.create ( tcode: 9,
+  tname: "Calculus",
+  scode: 3,
+  active: 'Y'
+)
+Subtopiccode.create ( stcode: 1,
+  stname: "Supto1",
+  tcode: 1,
+  active: 'Y'
+)
+Subtopiccode.create ( stcode: 2,
+  stname: "Supto2",
+  tcode: 1,
+  active: 'Y'
+)
+Subtopiccode.create ( stcode: 3,
+  stname: "Supto3",
+  tcode: 2,
+  active: 'Y'
+)
+Subtopiccode.create ( stcode: 4,
+  stname: "Supto4",
+  tcode: 2,
+  active: 'Y'
+)
